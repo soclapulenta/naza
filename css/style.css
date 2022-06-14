@@ -25,6 +25,7 @@
     align-items: center;
     background-color: #d4c1ba;
     border: solid 1px #fffcf3;
+    background-image: linear-gradient(to bottom, #a47132, #d4c1ba, #fffcf3);
    
 }
 
