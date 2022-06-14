@@ -29,9 +29,14 @@
    
 }
 
+
 .logo{
     width: 100px;
-    border: solid 1px #fffcf3
+    border: solid 1px #fffcf3;
+    animation-name: tamañoLogo;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    
 }
 .nav ul{
     width: 100%;
@@ -44,12 +49,16 @@
 .nav li{
     display: flex;
     margin: 10px;
+    transition: all 10s;
+   
    
     
 }
 nav li :hover{
     background-color: #a47132;
     color: black;
+    transform: scale(01.3);
+    transition: 1s;
 }
 
 .nav a{
@@ -64,6 +73,10 @@ nav li :hover{
     grid-area: header;
     border: solid 1px #fffcf3;
     text-align: center;
+    animation-name: cambioColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+   
     
 }
 .header h1{
@@ -76,6 +89,9 @@ nav li :hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
+   
+    
        
 }
 .primeraSeccion h2{
@@ -113,11 +129,13 @@ nav li :hover{
     padding: 15px;
     text-align: center;
     background-image: linear-gradient(265deg, #d4c1ba, #fffcf3);
+   
     
 }
 .aside h3{
     color: #a47132;
     margin-bottom: 50px;
+  
 }
 
 .form {
@@ -126,10 +144,46 @@ nav li :hover{
     border: solid 1px #fffcf3;
     color: #a47132;
 }
+.form div{
+transform: translate(20%); 
+
+}
+.form input{
+    padding: 10px;
+    margin: 10px;
+}
+.form input:focus{
+    transform: scale(1.05);
+    transition: 2s;
+}
 
 .footer {
     grid-area: footer;
     border: solid 1px #fffcf3;
     background-color: #d4c1ba;
     background-image: linear-gradient(to bottom, #a47132, #d4c1ba, #fffcf3);
+}
+
+@keyframes cambioColor{
+    0%{background-color: #fffcf3;
+    }
+    50%{
+        background-color: #d4c1ba;
+    }
+    100%{
+        background-color: #d68983;
+    }
+
+}
+
+@keyframes tamañoLogo{
+    0%{width: 25px;
+    }
+    25%{ width: 50px;
+    }
+    50%{
+        width: 75px;
+    }
+    100%{width: 100px;
+    }
 }
