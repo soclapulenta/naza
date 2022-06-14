@@ -111,6 +111,7 @@ nav li :hover{
     border: solid 1px #fffcf3;
     padding: 15px;
     text-align: center;
+    background-image: linear-gradient(265deg, #d4c1ba, #fffcf3);
     
 }
 .aside h3{
@@ -129,4 +130,5 @@ nav li :hover{
     grid-area: footer;
     border: solid 1px #fffcf3;
     background-color: #d4c1ba;
+    background-image: linear-gradient(to bottom, #a47132, #d4c1ba, #fffcf3);
 }
