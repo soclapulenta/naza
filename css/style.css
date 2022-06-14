@@ -92,6 +92,7 @@ nav li :hover{
    width: 50%;
    display: flex;
    justify-content: center;
+   transform: translate(50%);
 }
     
 
